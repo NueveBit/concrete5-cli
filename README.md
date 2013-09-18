@@ -19,5 +19,7 @@ Install concrete5 from the shell
     --config=<file>                    Use configuration file for installation
 
 Requires minimum version 5.5.1 of concrete5
-Reports bugs to <https://github.com/concrete5/concrete5-cli>
+
+Report bugs to <https://github.com/concrete5/concrete5-cli>
+
 For use with the concrete5 CMS <http://www.concrete5.org>
