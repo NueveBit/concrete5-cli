@@ -3,6 +3,7 @@
     "require": {
         "php": ">=5.1.0"
     },
+		"homepage": "http://www.concrete5.org",
     "license": "MIT",
     "bin": ["install-concrete5.php"]
 }
