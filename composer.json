@@ -1,0 +1,7 @@
+{
+    "name": "concrete5/concrete5-cli",
+    "require": {
+        "php": ">=5.1.0"
+    },
+    "bin": ["install-concrete5.php"]
+}
