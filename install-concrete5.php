@@ -34,6 +34,7 @@ if (count($argv) === 1) {
 define('FILE_PERMISSIONS_MODE', 0777);
 define('DIRECTORY_PERMISSIONS_MODE', 0777);
 define('APP_VERSION_CLI_MINIMUM', '5.5.1');
+define('BASE_URL', 'http://localhost');
 
 error_reporting(0);
 ini_set('display_errors', 0);
