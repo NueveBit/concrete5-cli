@@ -76,14 +76,14 @@ if (array_key_exists('config', $args)) {
 $config = array_merge($defaults, $config, $args);
 
 if ($config['target']) {
-	if (!file_exists($config['target'])) {
+	$target = $config['target'];
+	if (substr($target, 0, 1) !== '/') {
+		$target = dirname(__FILE__) . '/' . $target;
+	}
+	if (!file_exists($target)) {
 		die("ERROR: Target location not found.\n");
 	}
-	if (substr($target, 0, 1) == '/') {
-		define('DIR_BASE', $config['target']);
-	} else { 
-		define('DIR_BASE', dirname(__FILE__) . '/' . $config['target']);
-	}
+	define('DIR_BASE', $target);
 } else {
 	define('DIR_BASE', dirname(__FILE__));
 }
