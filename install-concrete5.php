@@ -130,6 +130,9 @@ require($corePath . '/startup/file_access_check.php');
 
 require($corePath . '/startup/localization.php');
 
+## Security helpers
+require($corePath . '/startup/security.php');
+
 ## Autoload core classes
 spl_autoload_register(array('Loader', 'autoloadCore'), true);
 
@@ -152,7 +155,7 @@ require($corePath . '/config/theme_paths.php');
 
 ## Load session handlers
 require($corePath . '/startup/session.php');
-if ($reinstall === 'yes') {
+if ($config['reinstall'] === 'yes') {
 	require($corePath . '/config/app.php');
 
 	// Remove all files from the files directory
