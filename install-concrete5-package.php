@@ -220,8 +220,8 @@ if (is_object($p)) {
         if ($currentLocale != 'en_US') {
             Localization::changeLocale($currentLocale);
         }
-        $pkg = Package::getByHandle($p->getPackageHandle());
-        echo "Package installed";
+        //$pkg = Package::getByHandle($p->getPackageHandle());
+        echo "Package '$pkgHandle' installed.\n";
     } catch (Exception $e) {
         if ($currentLocale != 'en_US') {
             Localization::changeLocale($currentLocale);
